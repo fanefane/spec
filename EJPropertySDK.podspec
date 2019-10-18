@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "EJPropertySDK"
-  spec.version      = "0.1.0"
+  spec.version      = "1.0"
   spec.summary      = "物业系统SDK"
   spec.description      = <<-DESC
                             A description of the pod.
@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.platform     = :ios, '10.0'
   spec.vendored_frameworks = 'EJPropertySDK.framework'
-  spec.resource  = "EJPropertyBundle.bundle"
+  #spec.resource  = "EJPropertyBundle.bundle"
  
   spec.dependency 'AFNetworking'
   spec.dependency 'MJRefresh'
