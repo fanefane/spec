@@ -17,14 +17,12 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.platform     = :ios, '10.0'
   spec.vendored_frameworks = 'EJPropertySDK.framework'
-  spec.resource  = "EJPropertyBundle.bundle"
+  spec.resource  = "EJPropertySDK.framework/EJPropertyBundle.bundle"
   #spec.source_files  = "EJPropertySDK", "EJPropertySDK/**/*.{h,m}"
   
   spec.dependency 'AFNetworking'
   spec.dependency 'MJRefresh'
- 
   spec.dependency 'Masonry'
- 
   spec.dependency 'IQKeyboardManager'
   spec.dependency 'SDWebImage'
 end
