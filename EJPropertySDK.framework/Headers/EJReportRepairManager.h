@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+ 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EJReportRepairManager : NSObject
@@ -15,8 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 跳转报事报修模块
 /// @param accessToken 用户token
 /// @param communityId 小区id
+/// @param loginInvalidBlock 登录过期回调
+ 
 +(void)pushToReportRepairModuleWithAccessToken:(NSString *)accessToken
-                             communityId:(NSString *)communityId;
+                                   communityId:(NSString *)communityId
+                                  loginInvalid:(void(^)(void))loginInvalidBlock;
 @end
 
 NS_ASSUME_NONNULL_END
