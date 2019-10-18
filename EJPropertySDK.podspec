@@ -16,9 +16,10 @@ Pod::Spec.new do |spec|
   #spec.static_framework = true
   spec.requires_arc = true
   spec.platform     = :ios, '10.0'
-  spec.vendored_frameworks = 'EJPropertySDK.framework'
-  #spec.resource  = "EJPropertyBundle.bundle"
- 
+  spec.vendored_frameworks = 'EJPropertySDK/EJPropertySDK.framework'
+  spec.resource  = "EJPropertySDK/EJPropertyBundle.bundle"
+  spec.source_files  = "EJPropertySDK", "EJPropertySDK/**/*.{h,m}"
+  
   spec.dependency 'AFNetworking'
   spec.dependency 'MJRefresh'
  

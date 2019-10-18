@@ -1,6 +1,0 @@
-framework module EJPropertySDK {
-  umbrella header "EJPropertySDK.h"
-
-  export *
-  module * { export * }
-}
