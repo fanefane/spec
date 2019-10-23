@@ -12,11 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface EJPropertyKit : NSObject
 ///  初始化SDK
-/// @param channelId 渠道id 【必填】
+/// @param channelId 渠道id 【选填】
 +(void)initWithChannelId:(NSString *)channelId;
 
 ///  初始化SDK
-/// @param channelId 渠道id 【必填】
+/// @param channelId 渠道id 【选填】
 /// @param themeColor 主题色 【选填】
 +(void)initWithChannelId:(NSString *)channelId themeColor:(NSString * __nullable)themeColor;
 @end

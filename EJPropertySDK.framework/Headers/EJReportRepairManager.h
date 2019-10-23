@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param loginInvalidBlock 登录过期回调
  
 +(void)pushToReportRepairModuleWithAccessToken:(NSString *)accessToken
+                                      memberId:(NSString*)mbId
                                    communityId:(NSString *)communityId
                                   loginInvalid:(void(^)(void))loginInvalidBlock;
 @end
